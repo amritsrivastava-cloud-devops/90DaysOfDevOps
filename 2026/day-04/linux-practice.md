@@ -18,6 +18,13 @@
 #Using commands uname, hostname , ip addr 
 <img width="1468" height="790" alt="image" src="https://github.com/user-attachments/assets/499890cb-6cb5-477f-b365-840b2fc4be5b" />
 
+#Practicing some linux basic commands 
+<img width="1308" height="740" alt="Screenshot 2026-01-28 at 12 27 52 PM" src="https://github.com/user-attachments/assets/f862b779-e6f4-4290-be38-bce512187410" />
+
+<img width="1308" height="740" alt="Screenshot 2026-01-28 at 12 27 52 PM" src="https://github.com/user-attachments/assets/b5797da8-5dc6-4fa7-91b1-9d8cd5e52845" />
+
+
+
 
 
 
