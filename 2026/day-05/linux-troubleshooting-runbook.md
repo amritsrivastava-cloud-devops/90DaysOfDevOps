@@ -46,8 +46,10 @@ using iostat
 
 using netstat -tulpn
 <img width="1450" height="351" alt="image" src="https://github.com/user-attachments/assets/ff342a66-6cef-47b0-b895-920423e3449c" />
+
 using ss -tulpn
 <img width="1838" height="310" alt="image" src="https://github.com/user-attachments/assets/0f65fce9-d42d-47ae-840f-f4a43ab0ef8e" />
+
 Using ping 
 <img width="898" height="242" alt="image" src="https://github.com/user-attachments/assets/4d9219a5-b64c-4a29-8f2f-bc36cdc25c22" />
 
