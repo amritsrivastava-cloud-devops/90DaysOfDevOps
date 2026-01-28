@@ -25,7 +25,8 @@
 
 #Check Running process 
 ps aux 
-<img width="1994" height="948" alt="image" src="https://github.com/user-attachments/assets/005cf87d-7ec3-414d-9b88-f862a78e104d" />
+<img width="2104" height="1182" alt="image" src="https://github.com/user-attachments/assets/e3b42b4b-6b82-4563-8b84-d33745845cf6" />
+
 top
 <img width="2310" height="1326" alt="image" src="https://github.com/user-attachments/assets/e7ed55d1-733e-4a66-987a-57aff091fdf0" />
 
