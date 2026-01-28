@@ -3,9 +3,8 @@
 Login to machine and check environment basics 
 <img width="1693" height="499" alt="image" src="https://github.com/user-attachments/assets/f3f74e97-974d-4326-b5f2-9a1ac619203d" />
 
-Step 1: Pick a Target Service (keep it simple)
+Step 1: Picking a Target Service 
 
-- Choose one service that actually exists on your system:
 - I am using ssh for this .
 # Use command - systemctl status ssh 
 <img width="1884" height="506" alt="image" src="https://github.com/user-attachments/assets/e1c8455a-6558-4d62-bc99-d575e69a3645" />
