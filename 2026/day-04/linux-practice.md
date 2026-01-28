@@ -23,6 +23,22 @@
 
 <img width="1994" height="948" alt="image" src="https://github.com/user-attachments/assets/15749dfb-1c53-47ef-9596-8390df4ea410" />
 
+#Check Running process 
+ps aux 
+<img width="1994" height="948" alt="image" src="https://github.com/user-attachments/assets/005cf87d-7ec3-414d-9b88-f862a78e104d" />
+top
+<img width="2310" height="1326" alt="image" src="https://github.com/user-attachments/assets/e7ed55d1-733e-4a66-987a-57aff091fdf0" />
+
+#checking service status 
+systemctl status ssh 
+<img width="2926" height="1152" alt="image" src="https://github.com/user-attachments/assets/5c7cb129-b13b-4db2-ae40-c8b36a602bfe" />
+
+#checking logs
+journalctl -u ssh
+<img width="2926" height="464" alt="image" src="https://github.com/user-attachments/assets/6fb7f4c4-6eb6-441a-ae8b-9c5080c9c4fe" />
+
+
+
 
 
 
