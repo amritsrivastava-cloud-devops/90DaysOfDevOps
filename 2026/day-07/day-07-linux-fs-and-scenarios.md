@@ -53,19 +53,19 @@
 ## Hands on Task 
 
 - Find the largest log file in /var/log
-Command: du -sh /var/log/* 2>/dev/null | sort -h | tail -5
+- Command: du -sh /var/log/* 2>/dev/null | sort -h | tail -5
 
 <img width="1526" height="354" alt="image" src="https://github.com/user-attachments/assets/ef54c287-0aea-48f5-81e9-5a64049c12e3" />
 
 
 - Look at a config file in /etc
-Command: cat /etc/hostname
+- Command: cat /etc/hostname
 
 <img width="938" height="152" alt="image" src="https://github.com/user-attachments/assets/a9c2ffaa-0e05-412e-9d56-86aecb24730f" />
 
 
 - Check your home directory
-Command: ls -la
+- Command: ls -la
 
 <img width="1392" height="352" alt="image" src="https://github.com/user-attachments/assets/a6e42ece-9ff4-40c9-bb8f-e5a42f9c2722" />
 
@@ -75,7 +75,7 @@ Command: ls -la
 
 - Question: How do you check if the 'nginx' service is running?
 - Check service status
-Command: systemctl status nginx
+- Command: systemctl status nginx
 
 <img width="918" height="158" alt="image" src="https://github.com/user-attachments/assets/bcae1677-a72d-466e-b1e5-129c5ebff8ee" />
 
@@ -83,12 +83,12 @@ Command: systemctl status nginx
 
 
 - If service is not found, list all services
-Command: systemctl list-units --type=service
+- Command: systemctl list-units --type=service
 
 <img width="2388" height="1586" alt="image" src="https://github.com/user-attachments/assets/b686305d-13c0-4524-a40f-709379f5082a" />
 
 - Check if service is enabled on boot
-Command: systemctl is-enabled nginx
+- Command: systemctl is-enabled nginx
 
 <img width="1150" height="154" alt="image" src="https://github.com/user-attachments/assets/a8a46a8b-6eb6-4682-ac85-9993f96b61c8" />
 
@@ -96,17 +96,17 @@ Command: systemctl is-enabled nginx
 
 - I am taking nginx for further diagnostics .
 - Checking current status
-Command: systemctl status nginx
+- Command: systemctl status nginx
 
 <img width="2376" height="734" alt="image" src="https://github.com/user-attachments/assets/80911fde-4ca4-46cc-b406-487b0d81b335" />
 
 - What do log say ?
-Command: journalctl -u myapp -n 50
+- Command: journalctl -u myapp -n 50
 
 <img width="2400" height="318" alt="image" src="https://github.com/user-attachments/assets/d59f8d41-b547-4eef-bc98-293d434dbb4f" />
 
--Is it enabled to start on boot?
-Command: systemctl is-enabled nginx
+- Is it enabled to start on boot?
+- Command: systemctl is-enabled nginx
 
 <img width="1164" height="172" alt="image" src="https://github.com/user-attachments/assets/329f922d-fb66-4047-bd42-50be39b54d8e" />
 
@@ -114,44 +114,44 @@ Command: systemctl is-enabled nginx
 
 - to view high usages resource in system
 Command: top
--To list the top CPU-consuming processes in sorted order.
-Command: ps aux --sort=-%cpu | head -10
+- To list the top CPU-consuming processes in sorted order.
+- Command: ps aux --sort=-%cpu | head -10
 
 <img width="2526" height="450" alt="image" src="https://github.com/user-attachments/assets/05e4525a-84f9-4eb4-bfaa-a82e1962c472" />
 
 ## Scenario 3 - Finding Service Logs - A developer asks: "Where are the logs for the 'docker' service?" The service is managed by systemd. What commands would you use?
 
 - To confirm service status and see log hints.
-Command: systemctl status docker
+- Command: systemctl status docker
 
 <img width="2932" height="880" alt="image" src="https://github.com/user-attachments/assets/aba6dd13-5c3c-4cfd-9d73-41206e910626" />
 
 - To view recent Docker service logs.
-Command: journalctl -n docker -u 50
+- Command: journalctl -n docker -u 50
 
 <img width="2938" height="626" alt="image" src="https://github.com/user-attachments/assets/bafbddf5-3276-410d-b3aa-73e99bb736e0" />
 
 - To follow logs in real-time
-Command: journalctl -u docker -f
+- Command: journalctl -u docker -f
 
 <img width="2926" height="568" alt="image" src="https://github.com/user-attachments/assets/96b9f872-ced9-4c1c-a8d4-e22fd30e0ba0" />
 
 ## Scenario 4 - File permission issue - A script at /home/user/backup.sh is not executing. When you run it: ./backup.sh . You get: "Permission denied"
-What commands would you use to fix this?
+- What commands would you use to fix this?
 
 - Step 1: Check current permissions
-Command: ls -l /home/user/backup.sh
-Look for: -rw-r--r-- (notice no 'x' = not executable)
+- Command: ls -l /home/user/backup.sh
+- Look for: -rw-r--r-- (notice no 'x' = not executable)
 
 - Step 2: Add execute permission
-Command: chmod +x /home/user/backup.sh
+- Command: chmod +x /home/user/backup.sh
 
 - Step 3: Verify it worked
-Command: ls -l /home/user/backup.sh
-Look for: -rwxr-xr-x (notice 'x' = executable)
+- Command: ls -l /home/user/backup.sh
+- Look for: -rwxr-xr-x (notice 'x' = executable)
 
-Step 4: Try running it
-Command: ./backup.sh
+- Step 4: Try running it
+- Command: ./backup.sh
 
 <img width="1652" height="908" alt="image" src="https://github.com/user-attachments/assets/a76486e1-37c2-4a65-83ee-032519f0d930" />
 
