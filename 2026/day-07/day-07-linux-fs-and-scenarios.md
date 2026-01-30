@@ -92,7 +92,7 @@ Command: systemctl is-enabled nginx
 
 <img width="1150" height="154" alt="image" src="https://github.com/user-attachments/assets/a8a46a8b-6eb6-4682-ac85-9993f96b61c8" />
 
-- Scenario 1 - A web application service called 'myapp' failed to start after a server reboot. What commands would you run to diagnose the issue? Write at least 4 commands in order.
+## Scenario 1 - A web application service called 'myapp' failed to start after a server reboot. What commands would you run to diagnose the issue? Write at least 4 commands in order.
 
 - I am taking nginx for further diagnostics .
 - Checking current status
@@ -110,7 +110,7 @@ Command: systemctl is-enabled nginx
 
 <img width="1164" height="172" alt="image" src="https://github.com/user-attachments/assets/329f922d-fb66-4047-bd42-50be39b54d8e" />
 
-- Scenario 2 - Your manager reports that the application server is slow. You SSH into the server. What commands would you run to identify , which process is using high CPU?
+## Scenario 2 - Your manager reports that the application server is slow. You SSH into the server. What commands would you run to identify , which process is using high CPU?
 
 - to view high usages resource in system
 Command: top
@@ -119,7 +119,7 @@ Command: ps aux --sort=-%cpu | head -10
 
 <img width="2526" height="450" alt="image" src="https://github.com/user-attachments/assets/05e4525a-84f9-4eb4-bfaa-a82e1962c472" />
 
-- Scenario 3 - Finding Service Logs - A developer asks: "Where are the logs for the 'docker' service?" The service is managed by systemd. What commands would you use?
+## Scenario 3 - Finding Service Logs - A developer asks: "Where are the logs for the 'docker' service?" The service is managed by systemd. What commands would you use?
 
 - To confirm service status and see log hints.
 Command: systemctl status docker
@@ -136,7 +136,7 @@ Command: journalctl -u docker -f
 
 <img width="2926" height="568" alt="image" src="https://github.com/user-attachments/assets/96b9f872-ced9-4c1c-a8d4-e22fd30e0ba0" />
 
-- Scenario 4 - File permission issue - A script at /home/user/backup.sh is not executing. When you run it: ./backup.sh . You get: "Permission denied"
+## Scenario 4 - File permission issue - A script at /home/user/backup.sh is not executing. When you run it: ./backup.sh . You get: "Permission denied"
 What commands would you use to fix this?
 
 - Step 1: Check current permissions
