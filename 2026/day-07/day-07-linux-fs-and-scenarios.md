@@ -69,7 +69,7 @@ Command: ls -la
 
 <img width="1392" height="352" alt="image" src="https://github.com/user-attachments/assets/a6e42ece-9ff4-40c9-bb8f-e5a42f9c2722" />
 
-#Part 2
+# Part 2
 
 - Scenario-Based Practice 
 
