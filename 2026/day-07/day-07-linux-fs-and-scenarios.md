@@ -52,19 +52,19 @@
 
 Hands on Task 
 
-# Find the largest log file in /var/log
+- Find the largest log file in /var/log
 Command: du -sh /var/log/* 2>/dev/null | sort -h | tail -5
 
 <img width="1526" height="354" alt="image" src="https://github.com/user-attachments/assets/ef54c287-0aea-48f5-81e9-5a64049c12e3" />
 
 
-# Look at a config file in /etc
+- Look at a config file in /etc
 Command: cat /etc/hostname
 
 <img width="938" height="152" alt="image" src="https://github.com/user-attachments/assets/a9c2ffaa-0e05-412e-9d56-86aecb24730f" />
 
 
-# Check your home directory
+- Check your home directory
 Command: ls -la
 
 <img width="1392" height="352" alt="image" src="https://github.com/user-attachments/assets/a6e42ece-9ff4-40c9-bb8f-e5a42f9c2722" />
