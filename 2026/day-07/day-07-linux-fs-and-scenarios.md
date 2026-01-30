@@ -50,7 +50,7 @@
 - Example content: /opt/google, /opt/custom-app
 - I would use this when installing external applications.
 
-Hands on Task 
+## Hands on Task 
 
 - Find the largest log file in /var/log
 Command: du -sh /var/log/* 2>/dev/null | sort -h | tail -5
@@ -71,7 +71,7 @@ Command: ls -la
 
 # Part 2
 
-- Scenario-Based Practice 
+## Scenario-Based Practice 
 
 - Question: How do you check if the 'nginx' service is running?
 - Check service status
