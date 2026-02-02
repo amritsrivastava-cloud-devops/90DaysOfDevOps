@@ -4,6 +4,8 @@
 ### Challenges Faced
 ### What I Learned
 
+## Daily Task 
+
 #### Task 1: Create Files 
 - Create empty file devops.txt using touch
 - Create notes.txt with some content using cat or echo
