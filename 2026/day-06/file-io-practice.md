@@ -8,7 +8,7 @@
 - echo "content2" >> notes.txt (>> means redirects without deleting anything)
 - echo "content3" | tee -a notes.txt (tee -a use to see output and save it )
 
-## REading the file back 
+## Reading the file back 
 - cat notes.txt (used to read file from top to end ) #avoid when file is large
 - head -n 2 notes.txt (display -n lines from top , default 10)
 - tail -n 2 notes.txt (dispaly -n lines from bottom )
