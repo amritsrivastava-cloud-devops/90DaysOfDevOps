@@ -30,7 +30,7 @@
 - Example content: syslog, auth.log
 - I would use this when troubleshooting errors and service issues.
 
-### /tmp
+#### /tmp
 - Stores temporary files created by applications.
 - Example content: temporary cache files
 - I would use this for short-lived files that don’t need persistence.
