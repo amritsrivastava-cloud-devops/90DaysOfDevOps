@@ -8,7 +8,8 @@
 - vi -R filename (read-only)
 - cat filename | tail -n 5
 - cat filename | head -n 5
-- chmod +x filename
+- chmod +x filename (executable for all )
+- chmod 755 filename (executable for owner)
 - chmod 444 filename (read only for all )
 - ./filename.sh (execute the file for output)
 
