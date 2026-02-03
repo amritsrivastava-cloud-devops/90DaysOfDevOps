@@ -51,6 +51,7 @@
 
 - Answer: What are current permissions? Who can read/write/execute?
 <img width="691" height="131" alt="image" src="https://github.com/user-attachments/assets/c820fa88-6e03-41bd-89c6-5165dbd873cf" />
+
 - owner and group can read write , others can only read .
 
 #### Task 4: Modify Permissions 
