@@ -14,7 +14,7 @@
 
 Document: What's the difference between owner and group?
 
-- Owner is user which has permission to read write execute file
+- Owner is user having permission to read write execute file
 - Group is set of users who have permission same as group has . ex - if group is developers and tokyo and berlin are members and if group has permission of read write and execute then both member tokyo and berlin can do it .
   
 ---
