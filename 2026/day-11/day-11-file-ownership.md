@@ -89,6 +89,8 @@ Using `chown` you can change both owner and group together:
 
 4. Verify all files and subdirectories changed: `ls -lR heist-project/`
 
+<img width="1224" height="624" alt="image" src="https://github.com/user-attachments/assets/f2494ae7-385a-48ad-8460-ed9431ade8a8" />
+
 <img width="1410" height="672" alt="image" src="https://github.com/user-attachments/assets/e0cc66c3-caae-45a7-9dec-f998b0de230b" />
 
 ---
