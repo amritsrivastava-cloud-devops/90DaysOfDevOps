@@ -2,7 +2,7 @@
 
 ## Challenge Tasks
 
-### Task 1: Understanding Ownership (10 minutes)
+### Task 1: Understanding Ownership 
 
 1. Run `ls -l` in your home directory
 2. Identify the **owner** and **group** columns
@@ -19,7 +19,7 @@ Document: What's the difference between owner and group?
   
 ---
 
-### Task 2: Basic chown Operations (20 minutes)
+### Task 2: Basic chown Operations 
 
 1. Create file `devops-file.txt`
 2. Check current owner: `ls -l devops-file.txt`
@@ -37,7 +37,7 @@ sudo chown tokyo devops-file.txt
 - Note : Using command sudo chown tokyo: devops-file.txt (changed group also to tokyo)
 ---
 
-### Task 3: Basic chgrp Operations (15 minutes)
+### Task 3: Basic chgrp Operations 
 
 1. Create file `team-notes.txt`
 2. Check current group: `ls -l team-notes.txt`
@@ -49,7 +49,7 @@ sudo chown tokyo devops-file.txt
 
 ---
 
-### Task 4: Combined Owner & Group Change (15 minutes)
+### Task 4: Combined Owner & Group Change 
 
 Using `chown` you can change both owner and group together:
 
@@ -66,7 +66,7 @@ Using `chown` you can change both owner and group together:
 
 ---
 
-### Task 5: Recursive Ownership (20 minutes)
+### Task 5: Recursive Ownership 
 
 1. Create directory structure:
    ```
@@ -95,7 +95,7 @@ Using `chown` you can change both owner and group together:
 
 ---
 
-### Task 6: Practice Challenge (20 minutes)
+### Task 6: Practice Challenge 
 
 1. Create users: `tokyo`, `berlin`, `nairobi` (if not already created)
 2. Create groups: `vault-team`, `tech-team`
