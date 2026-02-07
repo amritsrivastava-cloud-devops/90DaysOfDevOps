@@ -65,7 +65,7 @@
 <img width="2836" height="416" alt="image" src="https://github.com/user-attachments/assets/cd717f10-ba54-4254-9e7a-614b870fae63" />
 
 - **Name resolution:** `dig <domain>` or `nslookup <domain>` — record the resolved IP.
-<img width="2836" height="416" alt="image" src="https://github.com/user-attachments/assets/16aa5b53-f81d-43ea-a365-df0ddb429053" />
+<img width="1748" height="914" alt="image" src="https://github.com/user-attachments/assets/962e14cd-efc4-4ce7-86b4-46d74e2f9e46" />
 <img width="1554" height="928" alt="image" src="https://github.com/user-attachments/assets/20296cd9-220c-452b-aae8-425f2f284fa3" />
 
 - **HTTP check:** `curl -I <http/https-url>` — note the HTTP status code.
