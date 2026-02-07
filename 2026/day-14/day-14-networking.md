@@ -2,6 +2,8 @@
 
 ## Quick Concepts (write 1–2 bullets each)
 #### OSI layers (L1–L7) vs TCP/IP stack (Link, Internet, Transport, Application)
+
+---
 - OSI Layer is 7 layers
 - Application Layer
 - Presentation Layer
@@ -10,6 +12,7 @@
 - Network Layer
 - Data Link Layer
 - Physical Layer
+---
 
 - TCP /IP
 - Application Layer
