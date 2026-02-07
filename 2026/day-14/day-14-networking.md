@@ -66,7 +66,8 @@
 
 - **Name resolution:** `dig <domain>` or `nslookup <domain>` — record the resolved IP.
 <img width="1748" height="914" alt="image" src="https://github.com/user-attachments/assets/962e14cd-efc4-4ce7-86b4-46d74e2f9e46" />
-<img width="1554" height="928" alt="image" src="https://github.com/user-attachments/assets/20296cd9-220c-452b-aae8-425f2f284fa3" />
+<img width="1766" height="526" alt="image" src="https://github.com/user-attachments/assets/90a564ae-a0f9-4d02-b710-f9d9bda3148b" />
+
 
 - **HTTP check:** `curl -I <http/https-url>` — note the HTTP status code.
 <img width="2940" height="570" alt="image" src="https://github.com/user-attachments/assets/5502f778-f3e6-46d0-9526-152a30520064" />
@@ -79,15 +80,30 @@ Pick one target service/host (e.g., `google.com`, your lab server, or a local se
 ---
 
 ## Mini Task: Port Probe & Interpret
-1) Identify one listening port from `ss -tulpn` (e.g., SSH on 22 or a local web app).  
-2) From the same machine, test it: `nc -zv localhost <port>` (or `curl -I http://localhost:<port>`).  
-3) Write one line: is it reachable? If not, what’s the next check? (e.g., service status, firewall).
+1) Identify one listening port from `ss -tulpn` (e.g., SSH on 22 or a local web app).
+<img width="1336" height="162" alt="image" src="https://github.com/user-attachments/assets/b7299128-ad45-4b85-8702-69c2851fbc80" />
 
+3) From the same machine, test it: `nc -zv localhost <port>` (or `curl -I http://localhost:<port>`).
+<img width="1066" height="198" alt="image" src="https://github.com/user-attachments/assets/9dadb42f-df37-4049-9b06-b51980257d64" />
+
+5) Write one line: is it reachable? If not, what’s the next check? (e.g., service status, firewall).
+- Reachable
+- we can check ufw status if not reachable . ufw status command .
 ---
 
 ## Reflection (add to your markdown)
 - Which command gives you the fastest signal when something is broken?
+- Ping
+
 - What layer (OSI/TCP-IP) would you inspect next if DNS fails? If HTTP 500 shows up?
-- Two follow-up checks you’d run in a real incident.
+- Application layer -> Transport Layer
+- HTTP 500 = server/app error first, not network
+
+- Follow-up checks you’d run in a real incident.
+- sytemctl status firewalld
+- journalctl -u firewalld
+- cat /etc/resolv.conf
+- ufw status
+- ping
 
 ---
