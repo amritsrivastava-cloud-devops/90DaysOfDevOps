@@ -82,12 +82,12 @@
 <img width="1503" height="368" alt="image" src="https://github.com/user-attachments/assets/3d204bf6-d6bc-4d66-955b-133238f760af" />
 
 ## Task 5: Putting It Together
+
 ### 1. curl http://myapp.com:8080
-- DNS resolves myapp.com to an IP address.
-- The request connects to port 8080 over TCP using HTTP protocol.
+- TBC
 
 ### 2. App can’t reach DB 10.0.1.50:3306
-- Check network connectivity, security groups/firewall rules, correct IP/port, and whether MySQL is listening on port 3306.
+- TBC
 
 ## What I Learned (Key Takeaways)
 - DNS is the backbone that translates human-readable names into IP addresses.
