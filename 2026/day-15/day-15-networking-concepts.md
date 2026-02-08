@@ -3,9 +3,11 @@
 ## Task 1: DNS – How Names Become IPs
 
 ### 1. What happens when you type `google.com` in a browser?
-When you enter `google.com`, the browser first checks local DNS cache.  
-If not found, it asks the configured DNS resolver, which queries root, TLD, and authoritative DNS servers.  
-The DNS server returns the IP address, and the browser connects to that IP over HTTP/HTTPS.
+- When you type google.com, the Application layer performs DNS resolution to convert the domain name into an IP address.
+- The Transport layer establishes a connection — DNS uses UDP, and the browser uses TCP (3-way handshake) for reliable communication.
+- The Internet layer adds source and destination IP addresses and routes packets across networks to reach Google’s server.
+- The Network Access layer converts packets into frames, resolves MAC addresses using ARP, and sends data over Ethernet or Wi-Fi.
+- Google’s server responds with webpage data, which travels back through the same TCP/IP layers and is rendered by the browser.
 
 ### 2. DNS Record Types
 - **A** – Maps a domain name to an IPv4 address  
