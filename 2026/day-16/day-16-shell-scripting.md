@@ -55,6 +55,8 @@ chmod +x hello.sh
    - Asks for a filename
    - Checks if the file **exists** using `-f`
    - Prints appropriate message
+<img width="802" height="179" alt="image" src="https://github.com/user-attachments/assets/6193a32b-7213-4765-8254-9b6e8c6a8a99" />
+<img width="781" height="322" alt="image" src="https://github.com/user-attachments/assets/4c7ea373-40eb-42d4-973d-4fa1f323b62e" />
 
 ---
 
