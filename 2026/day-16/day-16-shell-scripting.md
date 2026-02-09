@@ -1,7 +1,5 @@
 # Day 16 – Shell Scripting Basics
 
-## Challenge Tasks
-
 ### Task 1: Your First Script
 1. Create a file `hello.sh`
 2. Add the shebang line `#!/bin/bash` at the top
@@ -80,8 +78,8 @@ Create `server_check.sh` that:
 3. If `y` — runs `systemctl status <service>` and prints whether it's **active** or **not**
 4. If `n` — prints "Skipped."
 
-<img width="1272" height="568" alt="image" src="https://github.com/user-attachments/assets/69d7315d-2a2a-4aae-8436-97980762975d" />
-<img width="2296" height="840" alt="image" src="https://github.com/user-attachments/assets/4055a01a-316a-4b0d-93e4-237b44061d77" />
+<img width="659" height="368" alt="image" src="https://github.com/user-attachments/assets/cdb3f59f-e596-4ed5-be16-299d45931b10" />
+<img width="786" height="410" alt="image" src="https://github.com/user-attachments/assets/3c07da5d-9e21-43ae-89c7-d198f36be247" />
 
 ---
 
@@ -93,4 +91,7 @@ Create `server_check.sh` that:
 - File check: `if [ -f filename ]; then`
 
 
-- What you learned (3 key points)
+#### What you learned (3 key points)
+1. Shebang defines which interpreter runs the script
+2. Double quotes allow variable expansion, single quotes don’t
+3. if-else enables decision making in scripts
