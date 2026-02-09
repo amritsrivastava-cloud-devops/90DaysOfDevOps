@@ -16,10 +16,9 @@ chmod +x hello.sh
 <img width="632" height="311" alt="image" src="https://github.com/user-attachments/assets/96e3c1c4-ea0d-4178-87db-c277f779db0a" />
 
 **Document:** What happens if you remove the shebang line?
-- If the script is executable but has no shebang:
 - The OS does not know which interpreter to use
 - Result: Exec format error
-- OR the script may run with the current shell (behavior varies by system)
+- Or the script may run with the current shell (behavior varies by system)
 - This makes execution unreliable.
 ---
 
