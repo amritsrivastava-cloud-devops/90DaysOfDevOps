@@ -1,7 +1,7 @@
 # Day 16 – Shell Scripting Basics
 
 ### Points to remember
-1. For Variables define it and use it with $ sign (ex Name -> $Name )
+1. For Variables ,  define it and use it with $ sign (ex Name -> $Name )
 2. For if-elif-else statement (if [] when there is condition , if commands no need of [] )
 
 ### Task 1: Your First Script
