@@ -30,9 +30,19 @@ chmod +x hello.sh
 
 <img width="774" height="335" alt="image" src="https://github.com/user-attachments/assets/7c822832-ed44-4cbe-85b6-9787e4257786" />
 <img width="788" height="169" alt="image" src="https://github.com/user-attachments/assets/7b3e63a5-b63a-4621-b582-17b162804e88" />
+<img width="561" height="75" alt="image" src="https://github.com/user-attachments/assets/df039fdf-43d0-4aef-8200-452e2fb93c0e" />
+
 
 2. Try using single quotes vs double quotes — what's the difference?
-- no difference "
+- Use double quotes when you need:
+- variable values
+- command substitution ($(date))
+
+- Use single quotes when you want:
+- exact/literal text
+- to avoid accidental expansion (paths, regex, passwords)
+
+- Double quotes expand, single quotes protect.
 ---
 
 ### Task 3: User Input with read
