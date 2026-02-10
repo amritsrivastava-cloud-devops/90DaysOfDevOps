@@ -5,8 +5,12 @@
 ### Task 1: For Loop
 1. Create `for_loop.sh` that:
    - Loops through a list of 5 fruits and prints each one
+<img width="1300" height="512" alt="image" src="https://github.com/user-attachments/assets/eea54225-293b-4124-9cdd-beb5c8593f17" />
+
+
 2. Create `count.sh` that:
    - Prints numbers 1 to 10 using a for loop
+<img width="1206" height="788" alt="image" src="https://github.com/user-attachments/assets/0f48d883-85d7-4359-bc96-496304b4a657" />
 
 ---
 
@@ -15,6 +19,7 @@
    - Takes a number from the user
    - Counts down to 0 using a while loop
    - Prints "Done!" at the end
+<img width="1424" height="832" alt="image" src="https://github.com/user-attachments/assets/e333ce08-76f9-4e51-8061-bbdbeab7aa91" />
 
 ---
 
