@@ -46,6 +46,9 @@
    - Checks if each package is installed (use `dpkg -s` or `rpm -q`)
    - Installs it if missing, skips if already present
    - Prints status for each package
+<img width="1714" height="844" alt="image" src="https://github.com/user-attachments/assets/d13b262e-135a-4639-8cff-07a37509304d" />
+<img width="1756" height="820" alt="image" src="https://github.com/user-attachments/assets/ed2f7812-2ecc-4307-b9ee-89b68d274b92" />
+
 
 > Run as root: `sudo -i` or `sudo su`
 
