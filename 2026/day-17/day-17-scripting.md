@@ -28,11 +28,14 @@
    - Accepts a name as `$1`
    - Prints `Hello, <name>!`
    - If no argument is passed, prints "Usage: ./greet.sh <name>"
+<img width="1176" height="518" alt="image" src="https://github.com/user-attachments/assets/0b1d58c1-dae9-45c4-8ea9-227293a612d3" />
 
 2. Create `args_demo.sh` that:
    - Prints total number of arguments (`$#`)
    - Prints all arguments (`$@`)
    - Prints the script name (`$0`)
+<img width="1862" height="700" alt="image" src="https://github.com/user-attachments/assets/aa26770e-4d6f-4868-b59f-26932476105d" />
+
 
 ---
 
@@ -55,6 +58,9 @@
    - Tries to navigate into it
    - Creates a file inside
    - Uses `||` operator to print an error if any step fails
+<img width="2890" height="620" alt="image" src="https://github.com/user-attachments/assets/78b4d2dd-5596-4760-87e9-6c4d35472b48" />
+<img width="1352" height="480" alt="image" src="https://github.com/user-attachments/assets/daabc86d-3c03-4aa3-afc3-fba03706327f" />
+
 
 Example:
 ```bash
