@@ -7,6 +7,8 @@
    - A function `greet` that takes a name as argument and prints `Hello, <name>!`
    - A function `add` that takes two numbers and prints their sum
    - Call both functions from the script
+     
+<img width="802" height="439" alt="image" src="https://github.com/user-attachments/assets/fdb67234-0722-44fe-a936-71cdd902e6ec" />
 
 ---
 
@@ -15,6 +17,7 @@
    - A function `check_disk` that checks disk usage of `/` using `df -h`
    - A function `check_memory` that checks free memory using `free -h`
    - A main section that calls both and prints the results
+<img width="937" height="508" alt="image" src="https://github.com/user-attachments/assets/2e1b886e-faed-432f-a29b-a4818d5efecf" />
 
 ---
 
@@ -50,6 +53,9 @@ Create `system_info.sh` that uses functions for everything:
 7. Use `set -euo pipefail` at the top
 
 Output should look clean and readable.
+<img width="1160" height="519" alt="image" src="https://github.com/user-attachments/assets/884dec00-bc2d-46c7-ab32-660286b1f225" />
+<img width="1143" height="662" alt="image" src="https://github.com/user-attachments/assets/e4b980d7-79cf-4d2f-99fa-7419656b8c69" />
+
 
 ---
 
