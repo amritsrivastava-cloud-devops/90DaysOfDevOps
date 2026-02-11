@@ -27,10 +27,14 @@
 3. Try a command that **fails** — what happens with `set -e`?
 4. Try a **piped command** where one part fails — what happens with `set -o pipefail`?
 
+<img width="734" height="307" alt="image" src="https://github.com/user-attachments/assets/5311c873-0d36-445d-9d6f-fab4824dfed3" />
+<img width="658" height="68" alt="image" src="https://github.com/user-attachments/assets/2663cf0c-c7da-469f-a29b-b46a47995a31" />
+<img width="556" height="69" alt="image" src="https://github.com/user-attachments/assets/60e5df0c-aa18-4e97-bdbe-bf5aad76cf6f" />
+
 **Document:** What does each flag do?
-- `set -e` →
-- `set -u` →
-- `set -o pipefail` →
+- `set -e` → Script stops immediately when the command fails , Without -e, the script would continue.
+- `set -u` → Undefined variable so script exits .
+- `set -o pipefail` → It makes a pipeline fail if any command in the pipeline fails.
 
 ---
 
