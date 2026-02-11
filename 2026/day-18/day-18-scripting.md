@@ -43,6 +43,7 @@
    - A function that uses `local` keyword for variables
    - Show that `local` variables don't leak outside the function
    - Compare with a function that uses regular variables
+<img width="724" height="466" alt="image" src="https://github.com/user-attachments/assets/60cd5b05-29e3-432d-820f-965b591ee4f3" />
 
 ---
 
