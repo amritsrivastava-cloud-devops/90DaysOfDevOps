@@ -10,6 +10,10 @@ Create `log_rotate.sh` that:
 4. Prints how many files were compressed and deleted
 5. Exits with an error if the directory doesn't exist
 
+<img width="1062" height="244" alt="image" src="https://github.com/user-attachments/assets/cf6b74e6-ebb9-4ba4-8f96-ac5c1cc12935" />
+<img width="1452" height="930" alt="image" src="https://github.com/user-attachments/assets/fa61dcc6-e5f1-4471-96e2-9149bd963edf" />
+<img width="1960" height="940" alt="image" src="https://github.com/user-attachments/assets/576cfbe7-4ad9-4d09-844c-250095db4cf5" />
+
 ---
 
 ### Task 2: Server Backup Script
