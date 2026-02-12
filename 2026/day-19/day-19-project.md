@@ -24,6 +24,9 @@ Create `backup.sh` that:
 4. Prints archive name and size
 5. Deletes backups older than 14 days from the destination
 6. Handles errors — exit if source doesn't exist
+<img width="1408" height="668" alt="image" src="https://github.com/user-attachments/assets/1f52cf02-7c0b-45c7-83a5-7bf0a75bc0f8" />
+<img width="1456" height="758" alt="image" src="https://github.com/user-attachments/assets/6daa99c9-a5f8-4d5c-bd5d-52dad020c091" />
+<img width="1886" height="1226" alt="image" src="https://github.com/user-attachments/assets/4d5befac-f858-42e8-b591-0cfadee8c0aa" />
 
 ---
 
@@ -43,6 +46,8 @@ Create `backup.sh` that:
    - Run `log_rotate.sh` every day at 2 AM
    - Run `backup.sh` every Sunday at 3 AM
    - Run a health check script every 5 minutes
+<img width="1454" height="414" alt="image" src="https://github.com/user-attachments/assets/8579a559-2c84-45c7-b350-f541c711f4b7" />
+
 
 ---
 
@@ -52,6 +57,8 @@ Create `maintenance.sh` that:
 2. Calls your backup function
 3. Logs all output to `/var/log/maintenance.log` with timestamps
 4. Write the cron entry to run it daily at 1 AM
+<img width="1394" height="496" alt="image" src="https://github.com/user-attachments/assets/8b4945c8-6083-4455-9e63-a3d2cc7982ab" />
+<img width="1452" height="370" alt="image" src="https://github.com/user-attachments/assets/2c448c95-de11-4bb1-b391-97b91da846b2" />
 
 ---
 
