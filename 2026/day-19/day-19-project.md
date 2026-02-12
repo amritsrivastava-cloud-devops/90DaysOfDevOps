@@ -46,7 +46,7 @@ Create `backup.sh` that:
    - Run `log_rotate.sh` every day at 2 AM
    - Run `backup.sh` every Sunday at 3 AM
    - Run a health check script every 5 minutes
-<img width="1454" height="414" alt="image" src="https://github.com/user-attachments/assets/8579a559-2c84-45c7-b350-f541c711f4b7" />
+<img width="1452" height="370" alt="image" src="https://github.com/user-attachments/assets/9d93c605-981f-4b3a-b67c-8920db2904c9" />
 
 
 ---
