@@ -46,7 +46,7 @@ Create `backup.sh` that:
    - Run `log_rotate.sh` every day at 2 AM
    - Run `backup.sh` every Sunday at 3 AM
    - Run a health check script every 5 minutes
-<img width="1452" height="370" alt="image" src="https://github.com/user-attachments/assets/9d93c605-981f-4b3a-b67c-8920db2904c9" />
+<img width="1450" height="244" alt="image" src="https://github.com/user-attachments/assets/5d4e14c5-9346-4418-8f7c-3a5a61c71eb7" />
 
 
 ---
@@ -58,7 +58,7 @@ Create `maintenance.sh` that:
 3. Logs all output to `/var/log/maintenance.log` with timestamps
 4. Write the cron entry to run it daily at 1 AM
 <img width="1394" height="496" alt="image" src="https://github.com/user-attachments/assets/8b4945c8-6083-4455-9e63-a3d2cc7982ab" />
-<img width="1452" height="370" alt="image" src="https://github.com/user-attachments/assets/2c448c95-de11-4bb1-b391-97b91da846b2" />
+<img width="1410" height="698" alt="image" src="https://github.com/user-attachments/assets/669bb779-65a4-4074-9645-ac5749d27972" />
 
 ---
 
