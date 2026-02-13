@@ -58,7 +58,12 @@ Create `maintenance.sh` that:
 3. Logs all output to `/var/log/maintenance.log` with timestamps
 4. Write the cron entry to run it daily at 1 AM
 <img width="1394" height="496" alt="image" src="https://github.com/user-attachments/assets/8b4945c8-6083-4455-9e63-a3d2cc7982ab" />
+
+- Using Print 
 <img width="1410" height="698" alt="image" src="https://github.com/user-attachments/assets/669bb779-65a4-4074-9645-ac5749d27972" />
+
+- Using function 
+<img width="1570" height="1172" alt="image" src="https://github.com/user-attachments/assets/00086a3e-0028-4524-8577-7ebfcdc12aa4" />
 
 ---
 
