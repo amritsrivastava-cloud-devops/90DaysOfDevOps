@@ -12,6 +12,118 @@ Write a Bash script (`log_analyzer.sh`) that automates the process of analyzing 
 - A Bash script: `log_analyzer.sh`
 - A generated summary report: `log_report_<date>.txt`
 - A markdown file: `day-20-solution.md` documenting your approach
+<img width="1292" height="777" alt="image" src="https://github.com/user-attachments/assets/de097fc7-17bf-4a03-8d46-8a26025c97bd" />
+<img width="851" height="552" alt="image" src="https://github.com/user-attachments/assets/e8760b76-42bf-4617-b130-4869f2b57296" />
+
+```bash
+#!/bin/bash
+set -euo pipefail
+
+#Task 1: Input & Validation
+
+# Check if log file argument is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <log_file_path>"
+    exit 1
+fi
+
+LOG_FILE="$1"
+
+# Check if file exists
+if [ ! -f "$LOG_FILE" ]; then
+    echo "Error: Log file '$LOG_FILE' does not exist."
+    exit 1
+fi
+
+# -------------------------------
+# Common Variables
+# -------------------------------
+
+DATE=$(date +%Y-%m-%d)
+REPORT_FILE="log_report_${DATE}.txt"
+TOTAL_LINES=$(wc -l < "$LOG_FILE")
+
+echo "Analyzing log file: $LOG_FILE"
+echo "-----------------------------------"
+
+
+#Task 2: Error Count
+
+ERROR_COUNT=$(grep -Ei "ERROR|Failed" "$LOG_FILE" | wc -l)
+
+echo "Total Errors (ERROR or Failed): $ERROR_COUNT"
+
+#Task 3: Critical Events
+
+CRITICAL_EVENTS=$(grep -n "CRITICAL" "$LOG_FILE" || true)
+
+echo
+echo "--- Critical Events ---"
+if [ -z "$CRITICAL_EVENTS" ]; then
+    echo "No CRITICAL events found."
+else
+    echo "$CRITICAL_EVENTS"
+fi
+
+
+#Task 4: Top 5 Error Messages
+
+TOP_ERRORS=$(grep "ERROR" "$LOG_FILE" \
+    | awk '{$1=$2=$3=""; print}' \
+    | sort \
+    | uniq -c \
+    | sort -rn \
+    | head -5 || true)
+
+echo
+echo "--- Top 5 Error Messages ---"
+if [ -z "$TOP_ERRORS" ]; then
+    echo "No ERROR messages found."
+else
+    echo "$TOP_ERRORS"
+fi
+
+#Task 5: Summary Report
+
+{
+    echo "Log Analysis Report"
+    echo "==================="
+    echo "Date: $DATE"
+    echo "Log File: $LOG_FILE"
+    echo "Total Lines Processed: $TOTAL_LINES"
+    echo "Total Errors: $ERROR_COUNT"
+    echo
+    echo "--- Top 5 Error Messages ---"
+    if [ -z "$TOP_ERRORS" ]; then
+        echo "No ERROR messages found."
+    else
+        echo "$TOP_ERRORS"
+    fi
+    echo
+    echo "--- Critical Events ---"
+    if [ -z "$CRITICAL_EVENTS" ]; then
+        echo "No CRITICAL events found."
+    else
+        echo "$CRITICAL_EVENTS"
+    fi
+} > "$REPORT_FILE"
+
+echo
+echo "Summary report generated: $REPORT_FILE"
+
+
+#Task 6 (Optional): Archive Logs
+
+ARCHIVE_DIR="archive"
+
+if [ ! -d "$ARCHIVE_DIR" ]; then
+    mkdir "$ARCHIVE_DIR"
+fi
+
+mv "$LOG_FILE" "$ARCHIVE_DIR/"
+
+echo "Log file archived to $ARCHIVE_DIR/"
+
 
 ---
 
