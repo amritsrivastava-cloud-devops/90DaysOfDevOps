@@ -13,7 +13,7 @@
 | Awk | `awk '{print $1}' file` | `awk -F: '{print $1}' /etc/passwd` |
 | Sed | `sed 's/old/new/g'` | `sed -i 's/foo/bar/g' file` |
 
-## Task 1: Basics
+## 🟢 Task 1: Basics
 Document the following with short descriptions and examples:
 1. Shebang (`#!/bin/bash`) — what it does and why it matters
 2. Running a script — `chmod +x`, `./script.sh`, `bash script.sh`
@@ -21,8 +21,6 @@ Document the following with short descriptions and examples:
 4. Variables — declaring, using, and quoting (`$VAR`, `"$VAR"`, `'$VAR'`)
 5. Reading user input — `read`
 6. Command-line arguments — `$0`, `$1`, `$#`, `$@`, `$?`
-
-## 🟢 Task 1: Basics
 
 ### 1. Shebang
 Defines which shell runs the script.
@@ -61,7 +59,7 @@ $?  # Last command exit status
 ```
 ---
 
-## Task 2: Operators and Conditionals
+## 🟢 Task 2: Operators & Conditionals
 Document with examples:
 1. String comparisons — `=`, `!=`, `-z`, `-n`
 2. Integer comparisons — `-eq`, `-ne`, `-lt`, `-gt`, `-le`, `-ge`
@@ -70,7 +68,6 @@ Document with examples:
 5. Logical operators — `&&`, `||`, `!`
 6. Case statements — `case ... esac`
 
-## 🟢 Task 2: Operators & Conditionals
 ### String Comparison
 ```bash
 [ "$a" = "$b" ]
@@ -120,7 +117,7 @@ esac
 ```
 ---
 
-## Task 3: Loops
+## 🟢 Task 3: Loops
 Document with examples:
 1. `for` loop — list-based and C-style
 2. `while` loop
@@ -129,7 +126,6 @@ Document with examples:
 5. Looping over files — `for file in *.log`
 6. Looping over command output — `while read line`
 
-## 🟢 Task 3: Loops
 ### for Loop (List)
 ```bash
 for i in 1 2 3; do
@@ -165,7 +161,7 @@ done
 ```
 ---
 
-## Task 4: Functions
+## 🟢 Task 4: Functions
 Document with examples:
 1. Defining a function — `function_name() { ... }`
 2. Calling a function
@@ -173,7 +169,6 @@ Document with examples:
 4. Return values — `return` vs `echo`
 5. Local variables — `local`
 
-## 🟢 Task 4: Functions
 ### Define & Call
 ```bash
 greet() {
@@ -199,7 +194,7 @@ myfunc() {
 ```
 ---
 
-### Task 5: Text Processing Commands
+# 🟢 Task 5: Text Processing
 Document the most useful flags/patterns for each:
 1. `grep` — search patterns, `-i`, `-r`, `-c`, `-n`, `-v`, `-E`
 2. `awk` — print columns, field separator, patterns, `BEGIN/END`
@@ -211,7 +206,6 @@ Document the most useful flags/patterns for each:
 8. `wc` — line/word/char count
 9. `head` / `tail` — first/last N lines, follow mode
 
-# 🟢 Task 5: Text Processing
 ## grep — search patterns
 ```bash
 grep -i "error" file
@@ -268,7 +262,7 @@ tail -f app.log
 ```
 ---
 
-### Task 6: Useful Patterns and One-Liners
+## 🟢 Task 6: Useful One-Liners
 Include at least 5 real-world one-liners you find useful. Examples:
 - Find and delete files older than N days
 - Count lines in all `.log` files
@@ -278,7 +272,6 @@ Include at least 5 real-world one-liners you find useful. Examples:
 - Parse CSV or JSON from command line
 - Tail a log and filter for errors in real time
 
-## 🟢 Task 6: Useful One-Liners
 ```bash
 # Delete files older than 7 days
 find /logs -type f -mtime +7 -delete
@@ -301,7 +294,7 @@ tail -f app.log | grep -i error
 
 ---
 
-### Task 7: Error Handling and Debugging
+## 🟢Task 7: Error Handling and Debugging
 Document with examples:
 1. Exit codes — `$?`, `exit 0`, `exit 1`
 2. `set -e` — exit on error
@@ -309,8 +302,6 @@ Document with examples:
 4. `set -o pipefail` — catch errors in pipes
 5. `set -x` — debug mode (trace execution)
 6. Trap — `trap 'cleanup' EXIT`
-
-## 🟢Task 7: Error Handling and Debugging
 
 ### 1. Exit Codes
 - Every command returns an exit status:
