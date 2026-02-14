@@ -82,6 +82,19 @@ A sample log file is available in this directory: `sample_log.log`
 
 You can also pick real-world log datasets from the [LogHub repository](https://github.com/logpai/loghub) to test your script against production-like logs (e.g., ZooKeeper, HDFS, Apache, Linux syslogs).
 
+---
+
+## Hints
+- Count errors: `grep -c "ERROR" logfile.log`
+- Print with line numbers: `grep -n "CRITICAL" logfile.log`
+- Top occurrences: `grep "ERROR" logfile.log | awk '{$1=$2=$3=""; print}' | sort | uniq -c | sort -rn | head -5`
+- Associative arrays: `declare -A error_map`
+- Date for filename: `date +%Y-%m-%d`
+- Move files: `mv logfile.log archive/`
+
+---
+## Output 
+- 
 <img width="1292" height="777" alt="image" src="https://github.com/user-attachments/assets/de097fc7-17bf-4a03-8d46-8a26025c97bd" />
 <img width="851" height="552" alt="image" src="https://github.com/user-attachments/assets/e8760b76-42bf-4617-b130-4869f2b57296" />
 
@@ -198,14 +211,4 @@ echo "Log file archived to $ARCHIVE_DIR/"
 
 
 ---
----
 
-## Hints
-- Count errors: `grep -c "ERROR" logfile.log`
-- Print with line numbers: `grep -n "CRITICAL" logfile.log`
-- Top occurrences: `grep "ERROR" logfile.log | awk '{$1=$2=$3=""; print}' | sort | uniq -c | sort -rn | head -5`
-- Associative arrays: `declare -A error_map`
-- Date for filename: `date +%Y-%m-%d`
-- Move files: `mv logfile.log archive/`
-
----
