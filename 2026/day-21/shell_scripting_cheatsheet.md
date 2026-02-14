@@ -39,9 +39,6 @@ Document the following with short descriptions and examples:
 5. Reading user input — `read`
 6. Command-line arguments — `$0`, `$1`, `$#`, `$@`, `$?`
 
-# 🐚 Shell Scripting Cheat Sheet
-_A quick-reference guide for daily DevOps work_
-
 ## 🟢 Task 1: Basics
 
 ### 1. Shebang
