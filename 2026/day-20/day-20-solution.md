@@ -94,9 +94,7 @@ if [ ! -f "$LOG_FILE" ]; then
     exit 1
 fi
 
-# -------------------------------
-# Common Variables
-# -------------------------------
+#Defining Variables
 
 DATE=$(date +%Y-%m-%d)
 REPORT_FILE="log_report_${DATE}.txt"
@@ -182,7 +180,3 @@ fi
 mv "$LOG_FILE" "$ARCHIVE_DIR/"
 
 echo "Log file archived to $ARCHIVE_DIR/"
-
-
----
-
