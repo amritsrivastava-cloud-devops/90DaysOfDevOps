@@ -79,17 +79,17 @@ git switch dev (switch branch)
 #### 1. Difference between git add and git commit
 
 ```bash
-git add moves changes from the working directory to the staging area.
+- git add moves changes from the working directory to the staging area.
 It tells Git “I want to include these changes in the next commit.”
-git commit saves the staged changes permanently into the repository with a message.
+- git commit saves the staged changes permanently into the repository with a message.
 It tells Git “Finalize and record these changes.”
-👉 In short:
+- In short:
 git add = prepare changes
 git commit = save changes
 ```
 #### 2. What does the staging area do? Why doesn’t Git commit directly?
 ```bash
-The staging area acts as a preview layer between editing files and committing them.
+The staging area acts as a preview place between editing files and committing them.
 It allows you to:
 Select specific files or parts of files to commit
 Review what will go into the commit
@@ -98,7 +98,7 @@ If Git committed directly:
 You’d have no control over what goes into a commit
 Commits would be messy and harder to track or revert
 
-👉 Staging = control + clarity
+- Staging = control + clarity
 ```
 #### 3. What information does git log show?
 ```
@@ -130,7 +130,7 @@ The project is no longer a Git repository
 All version history is lost
 Files remain, but Git tracking is gone
 
-👉 Deleting .git/ = deleting Git itself for that project
+- Deleting .git/ = deleting Git itself for that project
 ```
 #### 5. Difference between working directory, staging area, and repository
 ```
@@ -143,7 +143,7 @@ A temporary area that holds changes you’ve marked for commit (git add)
 Repository
 The permanent history of commits stored by Git (git commit)
 
-👉 Flow:
+- Flow:
 
 Working Directory → Staging Area → Repository
 
