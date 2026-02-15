@@ -22,6 +22,11 @@ git config --global user.email amrits.cloud@gmail.com
 3. Check the status — read and understand what Git is telling you
 4. Explore the hidden `.git/` directory — look at what's inside
 
+```bash
+git init
+git status
+```
+
 <img width="1202" height="622" alt="image" src="https://github.com/user-attachments/assets/95bbf14c-3d00-4df6-a7a0-40dc9652dcf8" />
 <img width="1246" height="357" alt="image" src="https://github.com/user-attachments/assets/6d1faac9-4540-4d09-885f-ebb3eadbfe53" />
 
