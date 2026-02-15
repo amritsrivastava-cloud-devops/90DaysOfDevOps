@@ -112,9 +112,9 @@ This helps you track:
 What changes were made
 Who made them
 When they were made
-<img width="1131" height="532" alt="image" src="https://github.com/user-attachments/assets/99004536-ffb0-48bf-9214-9940cb26eec4" />
 
 ```
+<img width="1131" height="532" alt="image" src="https://github.com/user-attachments/assets/99004536-ffb0-48bf-9214-9940cb26eec4" />
 #### 4. What is the .git/ folder? What happens if you delete it?
 ```
 The .git/ folder is the heart of the Git repository.
@@ -123,7 +123,6 @@ Commit history
 Branch information
 Configuration
 Staging data
-<img width="1044" height="146" alt="image" src="https://github.com/user-attachments/assets/22162a2c-2691-4d80-8473-cd6bf0aeb268" />
 
 If you delete the .git/ folder:
 The project is no longer a Git repository
@@ -132,6 +131,7 @@ Files remain, but Git tracking is gone
 
 - Deleting .git/ = deleting Git itself for that project
 ```
+<img width="1044" height="146" alt="image" src="https://github.com/user-attachments/assets/22162a2c-2691-4d80-8473-cd6bf0aeb268" />
 #### 5. Difference between working directory, staging area, and repository
 ```
 Working Directory
