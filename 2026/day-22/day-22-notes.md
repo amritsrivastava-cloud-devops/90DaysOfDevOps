@@ -1,29 +1,16 @@
 # Day 22 – Introduction to Git: Your First Repository
 
-## Task
-
-Today marks the beginning of your Git journey. Git is the backbone of modern DevOps — every tool, pipeline, and workflow revolves around version control. Before diving into advanced concepts, you need to get comfortable with the basics by doing.
-
-You will:
-- Understand what Git is and why it matters
-- Set up your first Git repository from scratch
-- Start building a living document of Git commands
-
----
-
-## Expected Output
-- A local Git repository with a clean commit history
-- A file called `git-commands.md` that you will keep updating in future days
-- A file called `day-22-notes.md` with your answers
-
----
-
-## Challenge Tasks
-
 ### Task 1: Install and Configure Git
 1. Verify Git is installed on your machine
 2. Set up your Git identity — name and email
 3. Verify your configuration
+
+```bash
+sudo apt install git
+git --version
+git config --global user.name amritsrivastava-cloud-devops
+git config --global user.email amrits.cloud@gmail.com
+```
 
 <img width="1241" height="667" alt="image" src="https://github.com/user-attachments/assets/6f81d4b3-5132-4e12-8f70-76a57037f13f" />
 
