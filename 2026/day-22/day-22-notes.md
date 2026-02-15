@@ -33,14 +33,6 @@ git status
 ---
 
 ### Task 3: Create Your Git Commands Reference
-1. Create a file called `git-commands.md` inside the repo
-2. Add the Git commands you've used so far, organized by category:
-   - **Setup & Config**
-   - **Basic Workflow**
-   - **Viewing Changes**
-3. For each command, write:
-   - What it does (1 line)
-   - An example of how to use it
 
 ```bash
 sudo apt install git   
@@ -50,15 +42,15 @@ git add (add from untraced to staged)
 git rm --cached filename (move from staged to untraced)
 git commit -m "messge" (commited once can't removed permanently , will be recovered if deleted)
 git log (shows hash username email )
-git status 
-git restore
+git status (check status untracked, staged , tracked )
+git restore filename (if deleted from staging )
 git config --global user.name amritsrivastava-cloud-devops
 git config --global user.email amrits.cloud@gmail.com
-git checkout -b dev
-git branch
-git branch -D dev
-git checkout dev
-git switch dev
+git checkout -b dev (create a new branch and copy all info of master)
+git branch (list all branch )
+git branch -D dev (delete branch )
+git checkout dev (switch branch)
+git switch dev (switch branch)
 ```
 ---
 
