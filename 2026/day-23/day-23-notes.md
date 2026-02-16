@@ -97,7 +97,9 @@ git pull → fetch + merge in one step
 <img width="944" height="551" alt="image" src="https://github.com/user-attachments/assets/127312f6-7eac-4ca2-86e2-9f8821fb735e" />
 
 3. Answer in your notes:
-   - What is the difference between clone and fork?
+
+  ```
+ - What is the difference between clone and fork?
    - Clone
    - Local copy of a repo
    - No ownership
@@ -116,6 +118,7 @@ git pull → fetch + merge in one step
    - 
    <img width="947" height="445" alt="image" src="https://github.com/user-attachments/assets/b5541747-1675-4d20-8398-894fe3f25b12" />
    <img width="846" height="126" alt="image" src="https://github.com/user-attachments/assets/a0fca262-2618-4498-a9c4-c858d0d78356" />
+```
    
 ```
 Original Repo (upstream)
