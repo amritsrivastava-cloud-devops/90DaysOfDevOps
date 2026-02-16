@@ -1,6 +1,6 @@
 # GIT COMMANDS 
 
-```bash
+**| COMMAND | DESCRIPTION |**
 sudo apt install git   
 git --version
 git init (initialize git repo)
@@ -34,4 +34,3 @@ git branch -a
 git merge upstream/main
 git push -u origin main
 
-```
