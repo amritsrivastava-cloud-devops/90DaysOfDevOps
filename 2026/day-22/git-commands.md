@@ -32,6 +32,6 @@ git fetch upstream
 git branch
 git branch -a
 git merge upstream/main
-git push origin main
+git push -u origin main
 
 ```
