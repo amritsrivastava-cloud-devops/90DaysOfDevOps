@@ -27,5 +27,6 @@ git switch -c branch-name
 git branch -D branch-name 
 
 git remote add origin https://personalacesstoken@github.com/amritsrivastava-cloud-devops/devops-git-practice.git
-
+git push origin main
+git pull origin main 
 ```
