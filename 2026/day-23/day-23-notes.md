@@ -116,9 +116,10 @@ git pull → fetch + merge in one step
      
    - After forking, how do you keep your fork in sync with the original repo?
    - 
-   <img width="947" height="445" alt="image" src="https://github.com/user-attachments/assets/b5541747-1675-4d20-8398-894fe3f25b12" />
-   <img width="846" height="126" alt="image" src="https://github.com/user-attachments/assets/a0fca262-2618-4498-a9c4-c858d0d78356" />
+
 ```
+<img width="947" height="445" alt="image" src="https://github.com/user-attachments/assets/b5541747-1675-4d20-8398-894fe3f25b12" />
+<img width="846" height="126" alt="image" src="https://github.com/user-attachments/assets/a0fca262-2618-4498-a9c4-c858d0d78356" />
    
 ```
 Original Repo (upstream)
