@@ -67,6 +67,7 @@ git branch -d branch-name
 <img width="943" height="861" alt="image" src="https://github.com/user-attachments/assets/28e44a74-1453-4475-937e-4fbea00d15a2" />
 <img width="949" height="651" alt="image" src="https://github.com/user-attachments/assets/fbfe05ba-2fcb-4034-b99b-c6d38cee06f1" />
 <img width="944" height="750" alt="image" src="https://github.com/user-attachments/assets/25d1aa99-e12f-4a2d-8954-327047643785" />
+
 ```
 origin → your fork or primary remote repo
 upstream → original repository (used mostly after forking)
@@ -81,6 +82,7 @@ upstream → original repository (used mostly after forking)
 
 <img width="942" height="575" alt="image" src="https://github.com/user-attachments/assets/b3c4fc05-49dc-44be-a648-a69bdf388066" />
 <img width="817" height="482" alt="image" src="https://github.com/user-attachments/assets/c24ed530-c306-4f32-915e-626f79f19965" />
+
 ```
 git fetch → downloads changes without merging
 git pull → fetch + merge in one step
@@ -114,6 +116,7 @@ git pull → fetch + merge in one step
    - 
    <img width="947" height="445" alt="image" src="https://github.com/user-attachments/assets/b5541747-1675-4d20-8398-894fe3f25b12" />
    <img width="846" height="126" alt="image" src="https://github.com/user-attachments/assets/a0fca262-2618-4498-a9c4-c858d0d78356" />
+   
 ```
 Original Repo (upstream)
         ↓ fetch
