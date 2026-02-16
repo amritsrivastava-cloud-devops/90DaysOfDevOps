@@ -17,4 +17,12 @@ git branch
 git branch -D dev
 git checkout dev
 git switch dev
+
+git branch
+git branch branch-name
+git checkout branch-name
+git checkout -b branch-name
+git switch branch-name
+git switch -c branch-name
+git branch -D branch-name 
 ```
