@@ -43,3 +43,10 @@ git branch -a
 git merge upstream/main
 git push -u origin main
 ```
+### git demo for setting url for personal acess token 
+<img width="2328" height="1098" alt="image" src="https://github.com/user-attachments/assets/689a34db-6ade-41f2-923d-60c04673295d" />
+
+### git demo for setting url for ssh
+
+<img width="2100" height="1252" alt="image" src="https://github.com/user-attachments/assets/872bae39-dfc5-4f7f-9c48-f425d4b948dc" />
+<img width="2236" height="1450" alt="image" src="https://github.com/user-attachments/assets/6e460734-2d73-412c-bc12-524074515eb0" />
