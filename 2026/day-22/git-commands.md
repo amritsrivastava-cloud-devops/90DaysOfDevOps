@@ -321,3 +321,103 @@ b8df475 ssh modifiy
 677a47d nginx commit
 ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ 
 ```
+## statsh and stash pop 
+
+```bash
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ ls
+README.md  index.nginx-debian.html  install_nginx.sh
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git branch 
+  dev
+* main
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ vi index.nginx-debian.html 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch dev 
+M	index.nginx-debian.html
+Switched to branch 'dev'
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ vi index.nginx-debian.html 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch main 
+M	index.nginx-debian.html
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git stash index.nginx-debian.html
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'index.nginx-debian.html'
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.nginx-debian.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch dev
+M	index.nginx-debian.html
+Switched to branch 'dev'
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ cat index.nginx-debian.html 
+this is demo 1
+
+
+second time change
+
+
+i am doing some minor changes . 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git stash 
+Saved working directory and index state WIP on dev: bc11e40 chore minor change in install script
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git status
+On branch dev
+nothing to commit, working tree clean
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ cat index.nginx-debian.html 
+this is demo 1
+
+
+second time change 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ vi index.nginx-debian.html 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git stash pop
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.nginx-debian.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (f591db6444a319ecdc4075531b49574b2e1770ad)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ cat index.nginx-debian.html 
+this is demo 1
+
+
+second time change
+
+
+i am doing some minor changes . 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch dev 
+M	index.nginx-debian.html
+Switched to branch 'dev'
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ cat index.nginx-debian.html 
+this is demo 1
+
+
+second time change
+
+
+i am doing some minor changes . 
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ 
+```
