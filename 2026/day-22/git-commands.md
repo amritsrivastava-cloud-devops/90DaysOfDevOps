@@ -1,6 +1,7 @@
 # GIT COMMANDS 
 
 | COMMAND | DESCRIPTION |
+|--------|------|
 | sudo apt install git |
 | git --version |
 | git init (initialize git repo)| 
