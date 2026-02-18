@@ -421,3 +421,124 @@ second time change
 i am doing some minor changes . 
 ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ 
 ```
+## git merge --squash dev (be in main )
+
+```
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git log --oneline
+9c65a67 (HEAD -> dev, origin/dev) delete stag file
+709698e staging-file.txt
+c38d6bb deleting newfile.txt
+5080d9a chore: new feature
+bc11e40 chore minor change in install script
+30af3c3 (main) chore : added minor change
+853b699 (origin/main) Merge pull request #1 from amritsrivastava-cloud-devops/dev
+f452a37 index html file
+190b9c8 chore : new change major
+4240cbf chore : minor changes to nginx script
+b8df475 ssh modifiy
+99eb4af using ssh
+677a47d nginx commit
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch dev
+M	index.nginx-debian.html
+Already on 'dev'
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch main
+M	index.nginx-debian.html
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git log --oneline
+30af3c3 (HEAD -> main) chore : added minor change
+853b699 (origin/main) Merge pull request #1 from amritsrivastava-cloud-devops/dev
+f452a37 index html file
+190b9c8 chore : new change major
+4240cbf chore : minor changes to nginx script
+b8df475 ssh modifiy
+99eb4af using ssh
+677a47d nginx commit
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git branch 
+  dev
+* main
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git merge dev --squash
+Updating 30af3c3..9c65a67
+Fast-forward
+Squash commit -- not updating HEAD
+ install_nginx.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git commit -m :chore modified shell script "
+> ^C
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ ^C
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git commit -m ":chore modified shell script "
+[main b6302d3] :chore modified shell script
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.nginx-debian.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git log --oneline 
+b6302d3 (HEAD -> main) :chore modified shell script
+30af3c3 chore : added minor change
+853b699 (origin/main) Merge pull request #1 from amritsrivastava-cloud-devops/dev
+f452a37 index html file
+190b9c8 chore : new change major
+4240cbf chore : minor changes to nginx script
+b8df475 ssh modifiy
+99eb4af using ssh
+677a47d nginx commit
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git merge --squash dev 
+Squash commit -- not updating HEAD
+Automatic merge went well; stopped before committing as requested
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git log
+commit b6302d33977e8172050ff0fd77fe9f6265fe81ed (HEAD -> main)
+Author: amritsrivastava-cloud-devops <amrits.cloud@gmail.com>
+Date:   Wed Feb 18 04:18:25 2026 +0000
+
+    :chore modified shell script
+
+commit 30af3c3feb1ecbe8353e6772a241a6a563279d4a
+Author: amritsrivastava-cloud-devops <amrits.cloud@gmail.com>
+Date:   Tue Feb 17 04:19:46 2026 +0000
+
+    chore : added minor change
+
+commit 853b699eeb247b541394b7596a50184dbd4a2f0e (origin/main)
+Merge: 190b9c8 f452a37
+Author: Amrit Srivastava <50949056+amritsrivastava-cloud-devops@users.noreply.github.com>
+Date:   Tue Feb 17 09:45:37 2026 +0530
+
+    Merge pull request #1 from amritsrivastava-cloud-devops/dev
+    
+    index html file (modify this page )
+    
+    
+    page modified
+
+commit f452a37ca2ee4952d8351250aeb07ab49b3c9c00
+Author: amritsrivastava-cloud-devops <amrits.cloud@gmail.com>
+Date:   Tue Feb 17 04:07:30 2026 +0000
+
+    index html file
+
+commit 190b9c8cb16fb812d6c2d4f5c3bcaca6a3faa3be
+Author: amritsrivastava-cloud-devops <amrits.cloud@gmail.com>
+Date:   Tue Feb 17 03:34:48 2026 +0000
+
+    chore : new change major
+
+commit 4240cbfd81831e79b1d5b8c47665dfe7e4c6ee01
+Author: amritsrivastava-cloud-devops <amrits.cloud@gmail.com>
+Date:   Tue Feb 17 03:33:51 2026 +0000
+
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git switch dev
+M	index.nginx-debian.html
+Switched to branch 'dev'
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git push origin dev
+Everything up-to-date
+ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$
+```
