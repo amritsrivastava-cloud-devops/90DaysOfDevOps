@@ -542,3 +542,46 @@ ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$ git push origin 
 Everything up-to-date
 ubuntu@ip-172-31-3-172:~/shell-scripts/day24/devops-nginx-demo$
 ```
+
+```
+# Git Commands Reference
+
+## Setup & Config
+git config --global user.name
+git config --global user.email
+git init
+git clone
+
+## Basic Workflow
+git status
+git add
+git commit
+git log
+git diff
+
+## Branching
+git branch
+git checkout
+git switch
+git merge
+git rebase
+
+## Remote
+git remote -v
+git push
+git pull
+git fetch
+git fork
+
+## Stash & Cherry Pick
+git stash
+git stash list
+git stash pop
+git cherry-pick
+
+## Reset & Revert
+git reset --soft
+git reset --mixed
+git reset --hard
+git revert
+```
