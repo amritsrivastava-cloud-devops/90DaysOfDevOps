@@ -27,7 +27,7 @@ echo "Login pace i am creating " > login_page.txt
 git add login_page.txt
 git commit -m "Add login page into project "
 
-echo "Login validation added" >> login.txt
+echo "Login validation added" >> login_page.txt
 git commit -am "Add login validation"
 git checkout main
 git merge feature-login
@@ -43,6 +43,9 @@ git add hotfix.txt
 git commit -m "Hotfix on main"
 git merge feature-signup
 ```
+<img width="2238" height="1278" alt="image" src="https://github.com/user-attachments/assets/49811f35-ad23-41b6-a25e-9ca30c494e74" />
+<img width="2066" height="1460" alt="image" src="https://github.com/user-attachments/assets/406baeed-0d87-4a11-96a7-e7f4f1aaba10" />
+
 ---
 
 ### Task 2: Git Rebase — Hands-On
