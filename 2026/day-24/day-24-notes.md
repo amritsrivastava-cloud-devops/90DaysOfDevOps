@@ -46,6 +46,8 @@ git merge feature-signup
 
 <img width="2238" height="1278" alt="image" src="https://github.com/user-attachments/assets/49811f35-ad23-41b6-a25e-9ca30c494e74" />
 <img width="2066" height="1460" alt="image" src="https://github.com/user-attachments/assets/406baeed-0d87-4a11-96a7-e7f4f1aaba10" />
+<img width="1988" height="988" alt="image" src="https://github.com/user-attachments/assets/8991dfdf-83fd-4192-ad35-804eee2380c2" />
+<img width="2064" height="1228" alt="image" src="https://github.com/user-attachments/assets/02b3cb38-ca42-40e9-b9b4-d4efefd2abc3" />
 
 ---
 
@@ -85,6 +87,10 @@ git checkout feature-dashboard
 git rebase main
 git log --oneline --graph --all
 ```
+
+<img width="1966" height="964" alt="image" src="https://github.com/user-attachments/assets/0001bf11-366b-411a-9f3e-4bed4e92aa7e" />
+<img width="2120" height="1260" alt="image" src="https://github.com/user-attachments/assets/f79100be-492d-4d0a-b94f-b1f91f945bdb" />
+
 ---
 
 ### Task 3: Squash Commit vs Merge Commit
@@ -126,6 +132,11 @@ git commit -m "Add settings"
 git checkout main
 git merge feature-settings
 ```
+
+<img width="2094" height="1316" alt="image" src="https://github.com/user-attachments/assets/ec6dac1c-25f9-4cf2-af8a-65e79c0c7c94" />
+<img width="2202" height="1276" alt="image" src="https://github.com/user-attachments/assets/b58c1d3e-bfa9-4acd-b05f-af6fe355019d" />
+<img width="2202" height="1276" alt="image" src="https://github.com/user-attachments/assets/2af7fe7a-5421-47ef-a2fe-473ff4a0e2b4" />
+
 ---
 
 ### Task 4: Git Stash — Hands-On
@@ -157,6 +168,9 @@ git stash list
 git stash apply stash@{1}
 
 ```
+
+<img width="2202" height="1276" alt="image" src="https://github.com/user-attachments/assets/864d9d9f-a204-4e0c-ad7d-772283771472" />
+
 ---
 
 ### Task 5: Cherry Picking
@@ -191,6 +205,11 @@ git checkout main
 git cherry-pick <commit-hash-of-Fix-B>
 git log --oneline
 ```
+
+<img width="2130" height="812" alt="image" src="https://github.com/user-attachments/assets/2a0cdf86-c89b-4ab4-8cbd-d412e55d0233" />
+<img width="2054" height="1514" alt="image" src="https://github.com/user-attachments/assets/fd617a8b-b321-4a20-9854-358b5c19623d" />
+<img width="2160" height="1520" alt="image" src="https://github.com/user-attachments/assets/c0de2528-8f67-46e9-9138-37ee9c431d21" />
+
 ---
 
 ## Hints
