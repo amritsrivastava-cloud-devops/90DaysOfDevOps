@@ -40,6 +40,11 @@ git reset --mixed HEAD~1
 git commit -m "Commit C again"
 git reset --hard HEAD~1
 ```
+
+<img width="2266" height="1526" alt="image" src="https://github.com/user-attachments/assets/68b1e400-c42a-4ff3-a1ff-d80b97f7f996" />
+<img width="1998" height="1524" alt="image" src="https://github.com/user-attachments/assets/78aa89a8-5df9-424a-8e23-1bc1a2059d07" />
+<img width="1958" height="1370" alt="image" src="https://github.com/user-attachments/assets/12821511-0da4-4589-8ee5-ab56332c8270" />
+
 ---
 
 ### Task 2: Git Revert — Hands-On
@@ -70,6 +75,9 @@ git commit -am "Commit Z"
 git revert <commit-hash-of-Y>
 git log --oneline
 ```
+<img width="2154" height="1526" alt="image" src="https://github.com/user-attachments/assets/cc721265-46ce-4442-908e-1aab3a741528" />
+<img width="2200" height="1148" alt="image" src="https://github.com/user-attachments/assets/04cde610-90df-400b-b2f8-0d72c9ac2142" />
+
 ---
 
 ### Task 3: Reset vs Revert — Summary
