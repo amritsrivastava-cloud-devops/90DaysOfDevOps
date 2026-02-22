@@ -8,6 +8,8 @@ Images - Can be pulled by DockerHub (official images only) + Can be created with
 Dockerfile – Step-by-Step Process – Cake example (Blueprint) 
 Examples – custom nginx, FastAPI python project, Simple Java Example (Hello Dosto)
 ```
+---
+
 ## Installation of mysql on docker 
 
 ```
