@@ -94,22 +94,38 @@ Faster image pulls
 ## Task 3: Container Lifecycle
 
 ### 1. Create (Without Starting)
-``` docker create --name nginx-amrit nginx ```
+```
+docker create --name nginx-amrit nginx
+```
 ### 2. Start
-``` docker start nginx-amrit ```
+```
+docker start nginx-amrit
+```
 ### 3. Pause
-``` docker pause nginx-amrit ```
-``` docker ps -a ```
+``` 
+docker pause nginx-amrit
+docker ps -a 
+```
 ### 4. Unpause
-``` docker unpause nginx-amrit ```
+```
+docker unpause nginx-amrit
+```
 ### 5. Stop
-``` docker stop nginx-amrit ```
+``` 
+docker stop nginx-amrit
+```
 ### 6. Restart
-``` docker restart nginx-amrit ```
+``` 
+docker restart nginx-amrit
+```
 ### 7. Kill
-``` docker kill nginx-amrit ```
+``` 
+docker kill nginx-amrit 
+```
 ### 8. Remove
-``` docker rm nginx-amrit ```
+``` 
+docker rm nginx-amrit 
+```
 
 - Checked docker ps -a after each step to observe state changes
 
