@@ -35,3 +35,25 @@ alpine       latest    a40c03cbb81c   3 weeks ago   8.44MB
 | Alpine | Uses musl libc & busybox, minimal OS |
 
 👉 Alpine is preferred for lightweight containers
+
+### 4. Inspect an Image
+
+```
+docker inspect nginx
+```
+
+- Information found:
+- Image ID
+- Environment variables
+- Exposed ports
+- Entrypoint & CMD
+- Layers & architecture
+  
+<img width="1543" height="875" alt="image" src="https://github.com/user-attachments/assets/442d284e-d8d1-4622-b15f-fa65192a4897" />
+
+### 5. Remove image 
+
+```
+docker rmi imgname
+```
+<img width="919" height="227" alt="image" src="https://github.com/user-attachments/assets/b5a74525-ff39-4c87-bd79-47fd45f9906f" />
