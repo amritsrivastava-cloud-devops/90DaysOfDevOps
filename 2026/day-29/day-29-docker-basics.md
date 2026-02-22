@@ -1,0 +1,87 @@
+# Day 29 – Introduction to Docker
+
+## 📌 Goal
+Understand what Docker is and run your first container.
+
+Today I learned:
+- Why containers exist
+- How Docker is different from Virtual Machines
+- Docker architecture and core components
+- How to run, manage, and explore containers
+
+---
+
+## Task 1: What is Docker?
+
+### What is a Container?
+A **container** is a lightweight, portable unit that packages:
+- Application code
+- Dependencies
+- Libraries
+- Runtime
+
+Containers run the same way on **any machine**, eliminating the classic  
+> “It works on my machine” problem.
+
+They share the host OS kernel, making them **fast, small, and efficient**.
+
+---
+
+### Why Do We Need Containers?
+- Consistent environments across dev, test, and prod
+- Faster application startup
+- Better resource utilization
+- Easy scaling and deployment
+- Ideal for microservices and CI/CD pipelines
+
+---
+
+### Containers vs Virtual Machines
+
+| Feature | Containers | Virtual Machines |
+|------|-----------|----------------|
+| OS | Share host OS | Separate OS per VM |
+| Size | MBs | GBs |
+| Startup | Seconds | Minutes |
+| Performance | Near native | Slower |
+| Isolation | Process-level | Full OS-level |
+
+- Containers are **lighter and faster**, VMs are **heavier but more isolated**.
+
+---
+
+### Docker Architecture (In My Words)
+
+Docker follows a **client-server architecture**:
+
+- **Docker Client**  
+  Used to run Docker commands (`docker run`, `docker ps`, etc.)
+
+- **Docker Daemon (dockerd)**  
+  Runs in the background and manages images, containers, networks, and volumes
+
+- **Docker Image**  
+  Read-only template used to create containers
+
+- **Docker Container**  
+  A running instance of an image
+
+- **Docker Registry**  
+  Stores images (example: Docker Hub)
+
+📌 Flow:
+Docker Client → Docker Daemon → Image (from Registry) → Container
+
+---
+
+## 🛠 Task 2: Install Docker
+
+### 🔹 Install Docker
+Installed Docker on my machine using official documentation.
+
+### 🔹 Verify Installation
+```bash
+sudo apt install docker.io
+docker --version
+docker info
+```
