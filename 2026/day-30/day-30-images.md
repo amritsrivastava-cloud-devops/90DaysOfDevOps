@@ -112,3 +112,47 @@ Faster image pulls
 ``` docker rm nginx-amrit ```
 
 - Checked docker ps -a after each step to observe state changes
+
+<img width="1237" height="755" alt="image" src="https://github.com/user-attachments/assets/40bbde73-aeed-4d90-b499-a30f2ec6e5fe" />
+<img width="1378" height="892" alt="image" src="https://github.com/user-attachments/assets/0ff0a581-743b-4479-b42d-8b7e4724349e" />
+
+---
+
+## Task 4: Working with Running Containers
+
+### 1. Run Nginx in Detached Mode
+```
+docker run -d -p 8080:80 --name nginx-supermario nginx
+```
+
+<img width="1711" height="775" alt="image" src="https://github.com/user-attachments/assets/7804fdd9-53fe-4d49-9030-6bf45f2a7287" />
+
+### 2. View Logs
+```
+docker logs containerid
+docker logs containerid -f
+```
+
+<img width="1772" height="895" alt="image" src="https://github.com/user-attachments/assets/d845d4c4-755e-4450-9225-a7c25f4bed59" />
+
+### 3. Follow Logs (Real-time)
+```
+docker exec -it containerid bash
+```
+<img width="1872" height="937" alt="image" src="https://github.com/user-attachments/assets/91e96f2a-e496-4665-95ac-dd67f1f3044e" />
+<img width="1004" height="482" alt="image" src="https://github.com/user-attachments/assets/a708b24a-ca3c-4994-821c-6782f1002fc5" />
+
+### 4. Exec into Container
+```
+docker exec containerid command
+```
+<img width="1239" height="501" alt="image" src="https://github.com/user-attachments/assets/e60bde4d-852b-4254-9986-d52ffce6c25f" />
+
+### 5. Inspect Container
+```
+docker inspect containerid
+```
+
+<img width="1395" height="554" alt="image" src="https://github.com/user-attachments/assets/4d519e9b-9cc3-405b-947c-21714df49665" />
+
+
