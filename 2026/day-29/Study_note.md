@@ -16,6 +16,25 @@ mongosh
 
 ---
 
+# Creating Dockerfile 
+git clone repo
+grep -i -r "Welcome to nginx!" /
+
+```Dockerfile
+# Take patilla
+
+FROM nginx
+
+# cooker
+
+WORKDIR /app
+
+# ingredients ( local docker )
+COPY index.html /usr/share/gninx/html
+
+EXPOSE 80
+```
+
 # 🐳 Docker Flags Cheat Sheet
 
 A quick reference for the most commonly used Docker flags.  
