@@ -8,6 +8,19 @@ Images - Can be pulled by DockerHub (official images only) + Can be created with
 Dockerfile – Step-by-Step Process – Cake example (Blueprint) 
 Examples – custom nginx, FastAPI python project, Simple Java Example (Hello Dosto)
 ```
+
+```
+Advance:
+Advanced:
+
+- My Docker image size is too big. reduce it and secure it [Multi-stage Docker Builds] (Distroless images)
+- My container crashed; I lost all my data. How do I persist my data? [Docker Volumes]
+- I want to run a multi-tier project which has a frontend, a backend, database, and AI LLM integration [Docker Compose – Docker Network, Docker Volumes, Health Checks].
+- Docker Hardened Images
+- Docker Scout
+- Docker Hub
+```
+
 ---
 
 ## Installation of mysql on docker 
