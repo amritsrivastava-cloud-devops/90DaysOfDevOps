@@ -30,6 +30,7 @@ alpine       latest    a40c03cbb81c   3 weeks ago   8.44MB
 ### 3. Ubuntu vs Alpine – Why the Size Difference?
 
 | Image |	Reason |
+|------|-----|
 | Ubuntu |	Full GNU/Linux utilities, larger base |
 | Alpine | Uses musl libc & busybox, minimal OS |
 
