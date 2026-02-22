@@ -10,7 +10,6 @@ Examples – custom nginx, FastAPI python project, Simple Java Example (Hello Do
 ```
 
 ```
-Advance:
 Advanced:
 
 - My Docker image size is too big. reduce it and secure it [Multi-stage Docker Builds] (Distroless images)
