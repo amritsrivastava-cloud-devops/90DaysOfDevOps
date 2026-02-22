@@ -98,10 +98,10 @@ docker run hello-world
 ```
 
 ### 📖 Output explained:
-Docker checked for the image locally
-Pulled it from Docker Hub
-Created and ran a container
-Printed a success message
+- Docker checked for the image locally
+- Pulled it from Docker Hub
+- Created and ran a container
+- Printed a success message
 
 <img width="1751" height="908" alt="image" src="https://github.com/user-attachments/assets/da43c514-1e4c-46ac-9d52-8f2f519cb71e" />
 
