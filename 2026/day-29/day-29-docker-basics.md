@@ -90,6 +90,7 @@ docker info
 ```
 
 <img width="1901" height="611" alt="image" src="https://github.com/user-attachments/assets/bdec16e0-ce75-480f-96db-66242cc20e39" />
+<img width="1313" height="933" alt="image" src="https://github.com/user-attachments/assets/52cabd0c-66e6-4256-ad47-3728280d37ad" />
 
 ```
 Run First Container
