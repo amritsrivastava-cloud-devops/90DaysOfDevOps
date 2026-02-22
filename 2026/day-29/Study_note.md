@@ -1,4 +1,5 @@
-## Docker Concepts
+# Docker Concepts
+```
 Why, what, and how do we learn Docker?
 Virtualization vs Containerisation
 Terminologies – Docker Engine, Docker Client, Docker Daemon, Docker Registry, Docker CLI, Docker Desktop, Docker Hub
@@ -6,7 +7,7 @@ Containers – Nginx, MySQL, MongoDB, ubuntu
 Images - Can be pulled by DockerHub (official images only) + Can be created with Dockerfile
 Dockerfile – Step-by-Step Process – Cake example (Blueprint) 
 Examples – custom nginx, FastAPI python project, Simple Java Example (Hello Dosto)
-
+```
 ## Installation of mysql on docker 
 
 ```
