@@ -82,6 +82,24 @@ Installed Docker on my machine using official documentation.
 ### 🔹 Verify Installation
 ```bash
 sudo apt install docker.io
+sudo systemctl status docker
+sudo systemctl enable docker
+sudo usermod -aG docker ubuntu && newgrp docker
 docker --version
 docker info
 ```
+
+<img width="1901" height="611" alt="image" src="https://github.com/user-attachments/assets/bdec16e0-ce75-480f-96db-66242cc20e39" />
+
+```
+Run First Container
+docker run hello-world
+```
+### 📖 Output explained:
+Docker checked for the image locally
+Pulled it from Docker Hub
+Created and ran a container
+Printed a success message
+
+<img width="1751" height="908" alt="image" src="https://github.com/user-attachments/assets/da43c514-1e4c-46ac-9d52-8f2f519cb71e" />
+
