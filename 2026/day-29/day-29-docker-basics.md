@@ -83,6 +83,7 @@ Installed Docker on my machine using official documentation.
 ```bash
 sudo apt install docker.io
 sudo systemctl status docker
+sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker ubuntu && newgrp docker
 docker --version
