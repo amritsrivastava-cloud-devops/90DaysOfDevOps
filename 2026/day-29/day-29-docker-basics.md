@@ -96,6 +96,7 @@ docker info
 Run First Container
 docker run hello-world
 ```
+
 ### 📖 Output explained:
 Docker checked for the image locally
 Pulled it from Docker Hub
