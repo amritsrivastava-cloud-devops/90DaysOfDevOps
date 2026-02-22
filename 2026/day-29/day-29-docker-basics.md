@@ -74,7 +74,7 @@ Docker Client → Docker Daemon → Image (from Registry) → Container
 
 ---
 
-## 🛠 Task 2: Install Docker
+## Task 2: Install Docker
 
 ### 🔹 Install Docker
 Installed Docker on my machine using official documentation.
@@ -98,7 +98,7 @@ Run First Container
 docker run hello-world
 ```
 
-### 📖 Output explained:
+### Output explained:
 - Docker checked for the image locally
 - Pulled it from Docker Hub
 - Created and ran a container
@@ -106,7 +106,7 @@ docker run hello-world
 
 <img width="1751" height="908" alt="image" src="https://github.com/user-attachments/assets/da43c514-1e4c-46ac-9d52-8f2f519cb71e" />
 
-## 🚀 Task 3: Run Real Containers
+## Task 3: Run Real Containers
 
 ### Run Nginx Container
 docker run -d -p 80:80 nginx #we can use any port remember portofcontainer:portoflocalos
