@@ -28,7 +28,8 @@ docker build -t name:tag .
 docker run image-name
 ```
 
-<img width="1156" height="863" alt="image" src="https://github.com/user-attachments/assets/30b06e6e-cb63-4f3c-add9-2335e629e2dc" />
+<img width="822" height="395" alt="image" src="https://github.com/user-attachments/assets/459fed3a-a1c9-4d16-bd18-6870fd5ea7ed" />
+
 
 
 **Verify:** The message prints on `docker run`
