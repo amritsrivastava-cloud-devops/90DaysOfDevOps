@@ -49,6 +49,7 @@ docker run -d --name mysql-test -e MYSQL_ROOT_PASSWORD=root mysql
 ```
 
 #### Because container storage is ephemeral. When the container is deleted, its writable layer is also deleted.
+
 <img width="1258" height="677" alt="image" src="https://github.com/user-attachments/assets/dafdb6b8-f193-4c1e-a153-0b3758027caa" />
 
 
