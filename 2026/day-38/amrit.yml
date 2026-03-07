@@ -1,0 +1,17 @@
+name: Amrit
+location: muz
+dob: 15/09/1998
+tools:
+    - cloud
+    - devops
+    - aws
+hobbies:
+    - coding
+    - singing
+    - pic editing 
+experience:
+    devops:
+        linux: 2
+        docker: 3
+        kubernetes: 1
+    
