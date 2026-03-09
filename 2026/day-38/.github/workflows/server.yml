@@ -1,11 +1,11 @@
 server:
-  name: PRODSERVER1
-  ip: 192.168.1.21
-  port: 80
+    name: PRODSERVER1
+    ip: 192.168.1.21
+    port: 80
 
 database:
-  host: localhost
-  name: app_db
-  Credentials:
-    - user: admin
-    - password: 12345
+    host: localhost
+    name: app_db
+    Credentials:
+      - user: admin
+      - password: 12345
