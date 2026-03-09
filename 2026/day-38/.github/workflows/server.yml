@@ -8,4 +8,4 @@ database:
   name: app_db
   Credentials:
     - user: admin
-    - password: 12345@admin
+    - password: 12345
