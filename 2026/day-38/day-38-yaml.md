@@ -168,11 +168,16 @@ tools:
 - `true`/`false` are booleans, `"true"` is a string
 - Validate online: yamllint.com
 
+---
+
 ### Key Learnings
+
 1️⃣ YAML uses spaces only
 - Tabs break YAML parsing.
+
 2️⃣ Indentation defines structure
 - Even a small indentation mistake can break the entire configuration.
+
 3️⃣ YAML supports powerful structures
 - Lists
 - Nested objects
