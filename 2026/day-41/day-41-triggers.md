@@ -11,6 +11,23 @@
 
 **Verify:** Does it show up on the PR page?
 
+```
+name: PR Check
+
+on:
+  pull_request:
+    branches: [ main ]
+    types: [opened, synchronize]
+
+jobs:
+  pr-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print PR branch
+        run: echo "PR check running for branch: ${{ github.head_ref }}"
+```
+
 ---
 
 ### Task 2: Scheduled Trigger
@@ -18,6 +35,11 @@
 2. Set it to run every day at midnight UTC
 3. Write in your notes: What is the cron expression for every Monday at 9 AM?
 
+```
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+```
 ---
 
 ### Task 3: Manual Trigger
@@ -27,6 +49,27 @@
 4. Go to the **Actions** tab → find the workflow → click **Run workflow**
 
 **Verify:** Can you trigger it manually and see your input printed?
+
+```
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Choose environment"
+        required: true
+        default: "staging"
+
+jobs:
+  manualwork:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print environment 
+        run: echo "Running deployment for environment"
+```
+<img width="2926" height="1082" alt="image" src="https://github.com/user-attachments/assets/3f7cd8af-a2ff-4fe8-83d2-ef0038b82b10" />
 
 ---
 
