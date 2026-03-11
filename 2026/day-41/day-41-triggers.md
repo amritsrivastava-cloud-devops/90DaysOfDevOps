@@ -82,12 +82,82 @@ Create `.github/workflows/matrix.yml` that:
 
 Then extend the matrix to also include 2 operating systems — how many total jobs run now?
 
+```
+name: Matrix Python
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  Python-validation:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version}}
+      - name: python version printing
+        run: python --version
+
+```
+
+<img width="2308" height="1202" alt="image" src="https://github.com/user-attachments/assets/d78de61a-4d14-45cd-946b-7d70988f3608" />
+
 ---
 
 ### Task 5: Exclude & Fail-Fast
 1. In your matrix, **exclude** one specific combination (e.g., Python 3.10 on Windows)
 2. Set `fail-fast: false` — trigger a failure in one job and observe what happens to the rest
 3. Write in your notes: What does `fail-fast: true` (the default) do vs `false`?
+
+```
+name: Matrix Exclude FailFast Test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  matrix-test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Print Python Version
+        run: python --version
+
+      - name: Fail only on Windows Python 3.10
+        if: matrix.os == 'windows-latest' && matrix.python-version == '3.10'
+        run: exit 1
+```
+
+<img width="2316" height="1122" alt="image" src="https://github.com/user-attachments/assets/f639da4a-4eb0-4650-94d4-7ddf3ed2dec7" />
+
+<img width="2318" height="1060" alt="image" src="https://github.com/user-attachments/assets/bc030e9e-c00a-4a44-87de-572fc464ecb1" />
+
 
 ---
 
