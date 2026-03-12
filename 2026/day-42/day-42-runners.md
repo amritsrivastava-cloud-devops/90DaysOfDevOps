@@ -79,7 +79,7 @@ Notes Answer
   - GitHub manages:
   - Infrastructure
   - OS updates
- - Installed tools
+  - Installed tools
   - Security patches
 
 - Why Pre-installed Tools Matter
