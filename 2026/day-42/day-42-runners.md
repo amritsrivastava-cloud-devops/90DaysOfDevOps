@@ -76,19 +76,19 @@ Notes Answer
   - A GitHub-hosted runner is a virtual machine provided and managed by GitHub that runs your workflow jobs.
 
 - Who manages it?
- - GitHub manages:
- - Infrastructure
- - OS updates
+  - GitHub manages:
+  - Infrastructure
+  - OS updates
  - Installed tools
- - Security patches
+  - Security patches
 
 - Why Pre-installed Tools Matter
- - Because:
- - Pipelines run faster
- - No need to install basic tools every run
- - Saves build time
- - Reduces workflow complexity
- - Example: Docker, Node, Python, Java already installed.
+  - Because:
+  - Pipelines run faster
+  - No need to install basic tools every run
+  - Saves build time
+  - Reduces workflow complexity
+  - Example: Docker, Node, Python, Java already installed.
 ---
 
 ### Task 3: Set Up a Self-Hosted Runner
