@@ -65,6 +65,31 @@ jobs:
 
 <img width="1877" height="905" alt="image" src="https://github.com/user-attachments/assets/7c823b8a-d781-43e3-bacb-119b3e7baf9b" />
 
+```
+name: Different-OS
+
+on:
+ workflow_dispatch:
+
+jobs:
+  TEST1LINUX:
+    runs-on: ubuntu-latest
+    steps:
+      - name: os name 
+        run: uname -a
+      - name: runner hostname
+        run: hostname
+      - name: current user
+        run: whoami
+      - name: docker vesion
+        run: docker --version
+      - name: python version
+        run: python --version
+      - name: node version check
+        run: node --version
+      - name: git version check
+        run: git --version
+```
 
 2. Look up the GitHub docs for the full list of pre-installed software on `ubuntu-latest`
 
@@ -100,6 +125,25 @@ Notes Answer
 4. Start the runner — verify it shows as **Idle** in GitHub
 
 **Verify:** Your runner appears in the Runners list with a green dot.
+```
+
+Download
+# Create a folder
+$ mkdir actions-runner && cd actions-runner# Download the latest runner package
+$ curl -o actions-runner-linux-x64-2.332.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.332.0/actions-runner-linux-x64-2.332.0.tar.gz# Optional: Validate the hash
+$ echo "f2094522a6b9afeab07ffb586d1eb3f190b6457074282796c497ce7dce9e0f2a  actions-runner-linux-x64-2.332.0.tar.gz" | shasum -a 256 -c# Extract the installer
+$ tar xzf ./actions-runner-linux-x64-2.332.0.tar.gz
+Configure
+# Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/amritsrivastava-cloud-devops/github-actions-zero-to-hero --token AMEWXQEOXYG5MK23A4OJUFDJWLC76# Last step, run it!
+$ ./run.sh
+Using your self-hosted runner
+# Use this YAML in your workflow file for each job
+runs-on: self-hosted
+```
+
+<img width="1293" height="537" alt="image" src="https://github.com/user-attachments/assets/e5afe85c-7a1d-48b1-b2a1-938cd485213f" />
+<img width="1261" height="666" alt="image" src="https://github.com/user-attachments/assets/ea85a529-aebf-4a25-abc7-00e5dcdd0970" />
 
 ---
 
@@ -113,6 +157,30 @@ Notes Answer
 4. Trigger it and watch it run on your own hardware
 
 **Verify:** Check your machine — is the file there?
+```
+
+name: Self Hosted
+
+on:
+  workflow_dispatch: 
+
+
+jobs:
+  testself-hosted-runner:
+    runs-on: self-hosted
+    steps:
+       - name: hostname of machine
+         run: hostname
+       - name: working directory
+         run: pwd
+       - name: create a file and verify
+         run: echo "this is for testing purpose " >> test.txt
+       - name: verify the file
+         run: ls -la
+
+```
+
+<img width="1879" height="907" alt="image" src="https://github.com/user-attachments/assets/ddf67e3b-64cb-452c-8bd5-e1c4e63f8657" />
 
 ---
 
@@ -123,18 +191,48 @@ Notes Answer
 
 Write in your notes: Why are labels useful when you have multiple self-hosted runners?
 
+```
+Add label in:
+Repo → Settings → Actions → Runners → Your Runner
+
+Example label:
+my-linux-runner
+
+Update workflow:
+runs-on: [self-hosted, my-linux-runner]
+
+Example:
+jobs:
+  run-on-my-machine:
+
+    runs-on: [self-hosted, my-linux-runner]
+
+    steps:
+      - run: hostname
+Why Labels Are Useful
+Labels help when you have multiple self-hosted runners.
+
+Example:
+Runner	Label
+GPU machine	gpu
+Docker server	docker
+High RAM server	high-memory
+Then workflow can target:
+runs-on: [self-hosted, gpu
+
+```
 ---
 
 ### Task 6: GitHub-Hosted vs Self-Hosted
 Fill this in your notes:
 
-| | GitHub-Hosted | Self-Hosted |
-|---|---|---|
-| Who manages it? | ? | ? |
-| Cost | ? | ? |
-| Pre-installed tools | ? | ? |
-| Good for | ? | ? |
-| Security concern | ? | ? |
+|                     | GitHub-Hosted           | Self-Hosted                       |
+| ------------------- | ----------------------- | --------------------------------- |
+| Who manages it?     | GitHub                  | You                               |
+| Cost                | Free with limits        | You pay for server                |
+| Pre-installed tools | Many tools installed    | You install manually              |
+| Good for            | Normal CI/CD            | Custom environments, heavy builds |
+| Security concern    | GitHub manages security | You must secure machine           |
 
 ---
 
