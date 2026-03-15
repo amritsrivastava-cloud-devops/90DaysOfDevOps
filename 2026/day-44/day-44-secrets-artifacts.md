@@ -11,6 +11,40 @@
 
 Write in your notes: Why should you never print secrets in CI logs?
 
+```
+name: Secret Message
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  show-secret-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check if secret exist
+        run: |
+          if [ -z "${{ secrets.MY_SECRET_MESSAGE }}" ]; then
+            echo "Secret not set"
+          else
+            echo "The secret is set: true"
+          fi
+
+      - name: Attempt to print secret
+        run: echo "Secret value is:${{ secrets.MY_SECRET_MESSAGE }}"
+```
+
+- What GitHub shows
+  - GitHub masks the secret in logs like this:
+  - Secret value is: ***
+
+- Why never print secrets?
+
+  - Secrets may contain API keys, passwords, tokens
+  - CI logs are visible to collaborators
+  - Exposing them can allow unauthorized access to infrastructure
+  - Attackers could deploy code, delete resources, or steal data
+    
 ---
 
 ### Task 2: Use Secrets as Environment Variables
